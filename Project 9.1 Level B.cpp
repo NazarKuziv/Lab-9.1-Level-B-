@@ -21,9 +21,12 @@ struct Student
 	Specialty specialty;
 	int Phisic;
 	int Math;
-	int Prog;
-	int Num_Methods;
-	int Pedagogy;
+	union {
+		int Prog;
+		int Num_Methods;
+		int Pedagogy;
+	};
+	
 
 };
 
